@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Feb 10 11:59:46 2026
-
-@author: heera
-"""
 # STEP 1 — Import pandas
 import pandas as pd
 
@@ -78,3 +72,7 @@ print("\nShape after removing duplicates:", df.shape)
 print("\nFinal cleaned dataset:")
 print(df.head())
 
+# STEP 8 — Save cleaned dataset to CSV
+df.to_csv("customer_orders_cleaned.csv", index=False)
+
+print("\nCleaned dataset saved as 'customer_orders_cleaned.csv'")
